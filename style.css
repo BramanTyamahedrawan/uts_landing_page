@@ -1,0 +1,571 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+.container {
+  width: 90%;
+  margin-inline: auto;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./image/main.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Navigasi*/
+.navigasi {
+  width: 100%;
+  padding: 15px 0 10px 0;
+}
+.navigasi .box-navigasi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box:nth-child(1) h1 {
+  display: flex;
+  font-size: 35px;
+}
+.biru {
+  color: #00f5ff;
+}
+.putih {
+  color: white;
+}
+.box:nth-child(2) ul {
+  display: flex;
+  flex-direction: row;
+}
+.box:nth-child(2) ul li {
+  list-style-type: none;
+  margin-left: 30px;
+}
+.box:nth-child(2) ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: all 0.6s ease;
+}
+.box:nth-child(2) ul li a:hover {
+  color: lightgreen;
+}
+.box:nth-child(2) ul li i {
+  display: none;
+}
+.box:nth-child(3) {
+  color: white;
+}
+.box:nth-child(3) {
+  display: none;
+}
+
+/* Welcome */
+.welcome {
+  color: white;
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  padding: 8px;
+  align-items: center;
+}
+.welcome h1 {
+  padding-bottom: 20px;
+  font-size: 50px;
+  text-align: center;
+}
+.welcome p {
+  margin: 5px;
+  font-size: 19px;
+  padding: 2px;
+  text-align: center;
+}
+
+/* About */
+.about {
+  width: 100%;
+  height: 100% auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 160px;
+  padding-bottom: 170px;
+  background-image: linear-gradient( 109.6deg,  rgba(223,234,247,1) 11.2%, rgba(244,248,252,1) 91.1% );
+}
+
+.box-about {
+  display: flex;
+  flex-direction: row;
+  line-height: 1.5em;
+}
+.tentang h1 {
+  font-size: 50px;
+}
+.box-about p ul li {
+  font-size: 20px;
+  opacity: none;
+}
+.box-about .box-tentang1 ul {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.box-about .box-tentang2 {
+  padding-left: 30px;
+  padding-right: 20px;
+}
+
+/* Fitur */
+.fitur{
+  width: 100%;
+  height: 100% auto;
+  background-image: linear-gradient( 109.6deg,  rgba(204,228,247,1) 11.2%, rgba(237,246,250,1) 100.2% );
+  padding-bottom: 150px;
+}
+.judul-fitur{
+  font-size: 30px;
+  padding-left: 8px;
+  padding-bottom: 20px;
+  padding-top: 100px;
+}
+.grid-fitur{
+  display: grid;
+  gap: 30px 50px;
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  box-shadow: 10px 8px 8px 0 rgba(0, 0, 0, 0.2),10px 10px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 2px double indigo;
+  align-items: center;
+  background-image: #f0efeb;
+  border-radius: 15px;
+}
+.grid-item:hover{
+  background-image: linear-gradient( 109.6deg,  rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+  transition: all 0.6s ease;
+  border: 4px outset aqua;
+  box-shadow: 5px 8px 8px skyblue;
+  border-radius: 20px;
+}
+.grid-item  h3{
+  font-size: 25px;
+}
+.grid-item i{
+  padding-right: 8px;
+}
+
+/* Service */
+.service{
+  width: 100%;
+  height: 100%;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-image: linear-gradient( 109.6deg,  rgba(223,234,247,1) 11.2%, rgba(244,248,252,1) 91.1% );
+}
+.judul-layanan{
+  font-size: 30px;
+  padding-left: 25px;
+}
+.grid-service{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 50px;
+  padding: 30px;
+}
+.service-item{
+  background-color: #edf2f4;
+  padding: 30px;
+  box-shadow: 10px 10px 5px cornflowerblue;
+  border: 2px solid blue;
+  border-radius: 15px;
+  text-align: center;
+}
+.service-item:hover{
+  background-color: #03045e;
+  transition: all 0.6s ease-in;
+  color: white;
+  border: 2px solid #00f5ff;
+  box-shadow: 10px 10px 10px lightsteelblue;
+}
+.grid-service:hover{
+  gap: 80px 50px;
+}
+.service-item i{
+  font-size: 40px;
+}
+
+/* Resource */
+.resource{
+  width: 100%;
+  height: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: linear-gradient( 109.6deg,  rgba(204,228,247,1) 11.2%, rgba(237,246,250,1) 100.2% );
+}
+.sumber-daya{
+  padding-left: 30px;
+  font-size: 25px;
+}
+.grid-resource{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 10px;
+  padding: 30px;
+}
+.src-item{
+  background-color: white;
+  padding: 30px;
+  box-shadow: 10px 10px 5px cornflowerblue;
+  border: 2px solid blue;
+  border-radius: 15px;
+  text-align: center;
+}
+.src-item:hover{
+  background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+  color: white;
+  box-shadow: 8px 7px 5px lightblue;
+  border: 2px solid aquamarine;
+  transition: all 0.8s ease-in;
+  padding: 50px;
+  font-size: 25px;
+}
+
+/* Find */
+.find{
+  width: 100%;
+  height: 100%;
+  background-color: azure;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-image: linear-gradient( 109.6deg,  rgba(223,234,247,1) 11.2%, rgba(244,248,252,1) 91.1% );
+}
+.judul-find{
+  font-size: 25px;
+  padding-left: 20px;
+}
+.grid-find{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 15px;
+  padding: 30px;
+}
+.find-item{
+  padding: 30px;
+  box-shadow: 10px 10px 8px cornflowerblue;
+  border-radius: 15px;
+  text-align: center;
+  background-color: white;
+}
+.find-item:hover{
+  background-image: linear-gradient(to right, #a8ff78, #78ffd6);
+  box-shadow: 8px 5px 5px royalblue;
+  transition: all 0.6s ease;
+  padding: 50px;
+}
+.find-item i{
+  font-size: 25px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+/* Contact */
+.contact {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient( 109.6deg,  rgba(204,228,247,1) 11.2%, rgba(237,246,250,1) 100.2% );
+}
+
+.box-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box-contact h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.box-contact form table tr {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-contact form table tr td label {
+  font-size: 20px;
+}
+
+.box-contact form table tr td input {
+  padding: 15px 60px 15px 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.box-contact form table tr td textarea {
+  margin-top: 10px;
+  padding: 15px 200px 200px 20px;
+}
+
+#darkmode{
+  background-color: black;
+  color: white;
+}
+
+
+@media screen and (max-width: 990px) {
+  /* Navigasi */
+  .box:nth-child(2) {
+    display: flex;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background-color: white;
+    width: 150px;
+    border-radius: 15px;
+    opacity: 0;
+    transition: all 0.6s ease;
+  }
+  .box-navigasi .menu-navigasi.menu-aktif {
+    opacity: 1;
+    top: 100px;
+  }
+  .box:nth-child(2) ul {
+    flex-direction: column;
+  }
+  .box:nth-child(2) ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+  }
+  .box:nth-child(2) ul li a {
+    color: black;
+    font-size: 15px;
+  }
+  .box:nth-child(2) ul li i {
+    display: initial;
+  }
+  .box:nth-child(2) i {
+    margin-inline: 10px;
+  }
+  .box:nth-child(3) {
+    display: inline-flex;
+    align-items: center;
+  }
+  .box:nth-child(3) i {
+    font-size: 22px;
+  }
+
+  /* Welcome */
+  .welcome .judul h1 {
+    font-size: 40px;
+  }
+  .welcome .deskripsi {
+    font-size: 15px;
+  }
+  .welcome {
+    align-items: center;
+    text-align: center;
+  }
+  .welcome {
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    padding: 8px;
+    align-items: center;
+  }
+
+  /* About */
+  .about .box-about {
+    flex-direction: column;
+  }
+  .box-about .box-tentang1 {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  .box-about .box-tentang2 {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  /* Service */
+  .grid-service{
+    grid-template-columns: auto auto;
+  }
+
+  @media screen and (max-width:800px) {
+    /* Resource */
+    .grid-resource{
+      grid-template-columns: auto auto auto;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+
+    /* Welcome */
+    .welcome {
+      color: white;
+      position: absolute;
+      top: 50%;
+      right: 30%;
+      padding: 8px;
+      align-items: center;
+    }
+    .welcome .judul h1 {
+      font-size: 30px;
+    }
+    .welcome .deskripsi {
+      font-size: 12px;
+    }
+
+    /* About*/
+    .box-about h1 {
+      font-size: 20px;
+    }
+    .box-about p ul li {
+      font-size: 15px;
+    }
+
+    /* Fitur */
+    .grid-fitur{
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Service */
+    .grid-service{
+      grid-template-columns: auto;
+    }
+
+    /* Contact */
+    .contact {
+      height: 100%;
+      padding: 100px 0 100px 0;
+    }
+  
+    .contact .box-contact {
+      flex-direction: column;
+    }
+  
+    .contact .box-contact h1 {
+      margin-bottom: 50px;
+    }
+
+    /* Find */
+    .grid-find{
+      grid-template-columns: auto auto;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+
+    /* Welcome */
+    .welcome .judul h1 {
+      font-size: 20px;
+    }
+    .welcome .deskripsi {
+      font-size: 10px;
+    }
+    .welcome {
+      color: white;
+      position: absolute;
+      top: 50%;
+      right: 30%;
+      padding: 8px;
+      align-items: center;
+    }
+    
+    /* About */
+    .box-about h1 {
+      font-size: 15;
+    }
+    .box-about p ul li {
+      font-size: 10px;
+    }
+
+    /* Fitur */
+    .grid-fitur{
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Contact */
+    .contact .box-contact form table tr td input {
+      padding: 10px 50px 15px 20px;
+    }
+  
+    .contact .box-contact form table tr td textarea {
+      padding: 15px 150px 150px 20px;
+    }
+
+    /* Resource */
+    .grid-resource{
+      grid-template-columns: auto;
+    }
+
+    /* Find */
+
+    .grid-find{
+      grid-template-columns: auto;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+
+    /* Welcome */
+    .welcome .judul h1 {
+      font-size: 15px;
+    }
+    .welcome .deskripsi {
+      font-size: 8px;
+    }
+    .welcome {
+      color: white;
+      position: absolute;
+      top: 50%;
+      right: 30%;
+      padding: 8px;
+      align-items: center;
+    }
+
+    /* About */
+    .box-about h1 {
+      font-size: 10px;
+    }
+    .box-about p ul li {
+      font-size: 7px;
+    }
+  }
+
+  /* Contact */
+  .contact {
+    padding: 120px 0 120px 0;
+  }
+
+  .contact .box-contact h1 {
+    font-size: 28px;
+  }
+
+  .contact .box-contact form table tr td input {
+    padding: 10px 40px 15px 20px;
+  }
+
+  .contact .box-contact form table tr td textarea {
+    padding: 15px 100px 100px 20px;
+  }
+}
